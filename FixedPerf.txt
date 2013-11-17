@@ -1,0 +1,113 @@
+[Feed Handler Statistics]
+   Corrupt Messages                     3974
+   Good Messages:                     310525
+   Duplicate Adds:                       193
+   Trades Missing Orders:               1911
+   Cancels for Missing ID's:            1833
+   Modifies for Missing ID's:           2004
+   Crossed Book:                       53510
+   Invalid Quantities:                  1977
+   Invalid Prices:                      2335
+   Invalid IDs:                         1950
+
+Performance results for [AddOrder] (unit: nanoseconds)
+   Samples:       138060
+   Min:              327
+   Max:            73724
+   Mean:             530
+   Median:           494
+
+   [Percentiles]       
+   10th:             423
+   20th:             446
+   50th:             494
+   70th:             532
+   90th:             612
+   95th:             681
+   99th:            1052
+   99.99th:        10773
+
+Performance results for [ModifyOrder] (unit: nanoseconds)
+   Samples:        33970
+   Min:              313
+   Max:            56870
+   Mean:             578
+   Median:           561
+
+   [Percentiles]       
+   10th:             416
+   20th:             444
+   50th:             561
+   70th:             622
+   90th:             726
+   95th:             819
+   99th:            1083
+   99.99th:         6643
+
+Performance results for [RemoveOrder] (unit: nanoseconds)
+   Samples:        31581
+   Min:              325
+   Max:            79553
+   Mean:             591
+   Median:           569
+
+   [Percentiles]       
+   10th:             480
+   20th:             509
+   50th:             569
+   70th:             615
+   90th:             696
+   95th:             746
+   99th:             964
+   99.99th:         6045
+
+Performance results for [Trade] (unit: nanoseconds)
+   Samples:       107032
+   Min:              177
+   Max:            71863
+   Mean:            1324
+   Median:          1231
+
+   [Percentiles]       
+   10th:            1110
+   20th:            1144
+   50th:            1231
+   70th:            1305
+   90th:            1484
+   95th:            1744
+   99th:            5130
+   99.99th:        61081
+
+Performance results for [MidQuote Print] (unit: nanoseconds)
+   Samples:       310525
+   Min:               91
+   Max:            76965
+   Mean:             788
+   Median:           692
+
+   [Percentiles]       
+   10th:             614
+   20th:             635
+   50th:             692
+   70th:             754
+   90th:             877
+   95th:            1070
+   99th:            4578
+   99.99th:        11219
+
+Performance results for [Book Print] (unit: nanoseconds)
+   Samples:        31877
+   Min:             2106
+   Max:           484253
+   Mean:          188815
+   Median:        215081
+
+   [Percentiles]       
+   10th:           48654
+   20th:           75641
+   50th:          215081
+   70th:          252984
+   90th:          289974
+   95th:          297536
+   99th:          318040
+   99.99th:       473564

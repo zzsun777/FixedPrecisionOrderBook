@@ -1,0 +1,153 @@
+==30530== Memcheck, a memory error detector
+==30530== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==30530== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==30530== Command: ./run.sh
+==30530== 
+--30530-- Valgrind options:
+--30530--    --suppressions=/usr/lib/valgrind/debian-libc6-dbg.supp
+--30530--    --leak-check=full
+--30530--    --show-reachable=yes
+--30530--    -v
+--30530-- Contents of /proc/version:
+--30530--   Linux version 3.11.0-12-generic (buildd@allspice) (gcc version 4.8.1 (Ubuntu/Linaro 4.8.1-10ubuntu7) ) #19-Ubuntu SMP Wed Oct 9 16:20:46 UTC 2013
+--30530-- Arch and hwcaps: AMD64, amd64-sse3
+--30530-- Page sizes: currently 4096, max supported 4096
+--30530-- Valgrind library directory: /usr/lib/valgrind
+--30530-- Reading syms from /bin/dash
+--30530--    object doesn't have a symbol table
+--30530-- Reading syms from /lib/x86_64-linux-gnu/ld-2.17.so
+--30530--   Considering /lib/x86_64-linux-gnu/ld-2.17.so ..
+--30530--   .. CRC mismatch (computed 51e60a7a wanted 521e3c74)
+--30530--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.17.so ..
+--30530--   .. CRC is valid
+--30530--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.17.so ..
+--30530--   .. CRC is valid
+--30530-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--30530--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--30530--   .. CRC mismatch (computed c436d3d9 wanted 99aa3883)
+--30530--    object doesn't have a symbol table
+--30530--    object doesn't have a dynamic symbol table
+--30530-- Scheduler: using generic scheduler lock implementation.
+--30530-- Reading suppressions file: /usr/lib/valgrind/debian-libc6-dbg.supp
+--30530-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==30530== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-30530-by-rasputin-on-???
+==30530== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-30530-by-rasputin-on-???
+==30530== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-30530-by-rasputin-on-???
+==30530== 
+==30530== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==30530== don't want to do, unless you know exactly what you're doing,
+==30530== or are doing some strange experiment):
+==30530==   /usr/lib/valgrind/../../bin/vgdb --pid=30530 ...command...
+==30530== 
+==30530== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==30530==   /path/to/gdb ./run.sh
+==30530== and then give GDB the following command
+==30530==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=30530
+==30530== --pid is optional if only one valgrind process is running
+==30530== 
+--30530-- REDIR: 0x4018f40 (strlen) redirected to 0x3806e491 (???)
+--30530-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--30530--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--30530--   .. CRC mismatch (computed 826470ab wanted a8b7e9f3)
+--30530--    object doesn't have a symbol table
+--30530-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--30530--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--30530--   .. CRC mismatch (computed d4fd7975 wanted b90a895a)
+--30530--    object doesn't have a symbol table
+--30530-- REDIR: 0x4018db0 (index) redirected to 0x4c2d480 (index)
+--30530-- REDIR: 0x4018e30 (strcmp) redirected to 0x4c2e560 (strcmp)
+--30530-- Reading syms from /lib/x86_64-linux-gnu/libc-2.17.so
+--30530--   Considering /lib/x86_64-linux-gnu/libc-2.17.so ..
+--30530--   .. CRC mismatch (computed 2c8ee98b wanted da4a7364)
+--30530--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.17.so ..
+--30530--   .. CRC is valid
+--30530--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.17.so ..
+--30530--   .. CRC is valid
+--30530-- REDIR: 0x4ec1980 (strcasecmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--30530-- REDIR: 0x4ebdd10 (strnlen) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--30530-- REDIR: 0x4ec3c50 (strncasecmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--30530-- REDIR: 0x4ec0790 (memset) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--30530-- REDIR: 0x4ec0740 (memcpy@GLIBC_2.2.5) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--30530-- REDIR: 0x4ebf700 (__GI_strrchr) redirected to 0x4c2d2a0 (__GI_strrchr)
+--30530-- REDIR: 0x4ebc030 (index) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--30530-- REDIR: 0x4ebc070 (__GI_strchr) redirected to 0x4c2d380 (__GI_strchr)
+--30530-- REDIR: 0x4eb7470 (malloc) redirected to 0x4c2a270 (malloc)
+--30530-- REDIR: 0x4ec7b20 (strchrnul) redirected to 0x4c300f0 (strchrnul)
+--30530-- REDIR: 0x4eb7900 (free) redirected to 0x4c2b5a0 (free)
+--30530-- REDIR: 0x4ebdc30 (__GI_strlen) redirected to 0x4c2d830 (__GI_strlen)
+--30530-- REDIR: 0x4ebdbe0 (strlen) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--30530-- REDIR: 0x4ec12e0 (mempcpy) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--30530-- REDIR: 0x4ec1330 (__GI_mempcpy) redirected to 0x4c30210 (mempcpy)
+--30530-- REDIR: 0x4ebc0f0 (strcmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--30530-- REDIR: 0x4ebc130 (__GI_strcmp) redirected to 0x4c2e510 (__GI_strcmp)
+--30530-- REDIR: 0x4ebd6a0 (strcspn) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--30530-- REDIR: 0x4ebd6d0 (__GI_strcspn) redirected to 0x4c305f0 (strcspn)
+--30530-- REDIR: 0x4ebf7a0 (strpbrk) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--30530-- REDIR: 0x4ebf7d0 (__GI_strpbrk) redirected to 0x4c30590 (strpbrk)
+--30530-- REDIR: 0x4eb79f0 (realloc) redirected to 0x4c2c630 (realloc)
+--30533-- REDIR: 0x4ec6330 (memcpy@@GLIBC_2.14) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--30533-- REDIR: 0x4ec6380 (__GI_memcpy) redirected to 0x4c2e8b0 (memcpy@@GLIBC_2.14)
+==30530== 
+==30530== HEAP SUMMARY:
+==30530==     in use at exit: 2,274 bytes in 65 blocks
+==30530==   total heap usage: 70 allocs, 5 frees, 2,901 bytes allocated
+==30530== 
+==30530== Searching for pointers to 65 not-freed blocks
+==30530== Checked 92,336 bytes
+==30530== 
+==30530== 32 bytes in 1 blocks are still reachable in loss record 1 of 5
+==30530==    at 0x4C2A2DB: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30530==    by 0x40A928: ??? (in /bin/dash)
+==30530==    by 0x4112F8: ??? (in /bin/dash)
+==30530==    by 0x411BA0: ??? (in /bin/dash)
+==30530==    by 0x4020D2: ??? (in /bin/dash)
+==30530==    by 0x4E55DE4: (below main) (libc-start.c:260)
+==30530== 
+==30530== 63 bytes in 1 blocks are still reachable in loss record 2 of 5
+==30530==    at 0x4C2A2DB: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30530==    by 0x4EBD8C1: strdup (strdup.c:42)
+==30530==    by 0x40A968: ??? (in /bin/dash)
+==30530==    by 0x403227: ??? (in /bin/dash)
+==30530==    by 0x411BC3: ??? (in /bin/dash)
+==30530==    by 0x4020D2: ??? (in /bin/dash)
+==30530==    by 0x4E55DE4: (below main) (libc-start.c:260)
+==30530== 
+==30530== 67 bytes in 1 blocks are still reachable in loss record 3 of 5
+==30530==    at 0x4C2A2DB: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30530==    by 0x40A928: ??? (in /bin/dash)
+==30530==    by 0x411439: ??? (in /bin/dash)
+==30530==    by 0x411BC3: ??? (in /bin/dash)
+==30530==    by 0x4020D2: ??? (in /bin/dash)
+==30530==    by 0x4E55DE4: (below main) (libc-start.c:260)
+==30530== 
+==30530== 160 bytes in 1 blocks are still reachable in loss record 4 of 5
+==30530==    at 0x4C2A2DB: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30530==    by 0x4C2C74F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30530==    by 0x40A948: ??? (in /bin/dash)
+==30530==    by 0x409F56: ??? (in /bin/dash)
+==30530==    by 0x404AD7: ??? (in /bin/dash)
+==30530==    by 0x403B8E: ??? (in /bin/dash)
+==30530==    by 0x40A6FD: ??? (in /bin/dash)
+==30530==    by 0x402137: ??? (in /bin/dash)
+==30530==    by 0x4E55DE4: (below main) (libc-start.c:260)
+==30530== 
+==30530== 1,952 bytes in 61 blocks are still reachable in loss record 5 of 5
+==30530==    at 0x4C2A2DB: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30530==    by 0x40A928: ??? (in /bin/dash)
+==30530==    by 0x4112F8: ??? (in /bin/dash)
+==30530==    by 0x411B66: ??? (in /bin/dash)
+==30530==    by 0x4020D2: ??? (in /bin/dash)
+==30530==    by 0x4E55DE4: (below main) (libc-start.c:260)
+==30530== 
+==30530== LEAK SUMMARY:
+==30530==    definitely lost: 0 bytes in 0 blocks
+==30530==    indirectly lost: 0 bytes in 0 blocks
+==30530==      possibly lost: 0 bytes in 0 blocks
+==30530==    still reachable: 2,274 bytes in 65 blocks
+==30530==         suppressed: 0 bytes in 0 blocks
+==30530== 
+==30530== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
+--30530-- 
+--30530-- used_suppression:      2 dl-hack3-cond-1
+==30530== 
+==30530== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
